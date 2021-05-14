@@ -18,6 +18,10 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/public/back-end/script.js', function(req, res) {
+    res.sendFile(path.join(__dirname + '/asda.js'));
+});
+
 app.get('/download', (req,res) => {
 
     var URL = req.query.URL;
