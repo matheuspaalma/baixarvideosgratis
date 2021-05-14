@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
+var path = require('path');
 
 const app = express();
 
@@ -12,7 +13,9 @@ app.listen(4000, () => {
     
 });
 
-app.use(express.static(__dirname));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 app.get('/download', (req,res) => {
 
