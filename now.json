@@ -2,6 +2,6 @@
     "version": 2,
     "name": "baixarvideosgratis",
     "builds": [
-        {"src": "index.js", "use": "@now/node-server"}
+        {"src": "./index.js", "use": "@now/node-server"}
     ]
 }
