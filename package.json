@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Baixar vídeos gratis",
   "main": "index.js",
-  "scripts": {
-    "test": "a"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
