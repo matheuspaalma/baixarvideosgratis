@@ -12,9 +12,7 @@ app.listen(4000, () => {
     
 });
 
-app.use('/',function(req, res,next) {
-    next();
-});
+app.use(express.static(__dirname));
 
 app.get('/download', (req,res) => {
 
