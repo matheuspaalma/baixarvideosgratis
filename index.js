@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/public/back-end/script.js', function(req, res) {
-    res.sendFile(path.join(__dirname + '/script.js'));
+    res.sendFile(path.join(__dirname + '/public/back-end/script.js'));
 });
 
 app.get('/download', (req,res) => {
