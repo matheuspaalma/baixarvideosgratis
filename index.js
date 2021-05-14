@@ -2,9 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
 
-const app = express();
+const app = express().use(express.static(__dirname + '/'));
 
 app.use(cors());
+
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+});
 
 app.listen(4000, () => {
 
