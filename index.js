@@ -12,6 +12,10 @@ app.listen(4000, () => {
     
 });
 
+app.use('/',function(req, res,next) {
+    next();
+});
+
 app.get('/download', (req,res) => {
 
     var URL = req.query.URL;
