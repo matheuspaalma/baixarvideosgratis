@@ -15,7 +15,7 @@ convertBtn.addEventListener('click', () => {
     }
 });
 
-function sendURL(URL) 
+function sendURL(URL)
 {
     var URLBase = "localhost";
 
