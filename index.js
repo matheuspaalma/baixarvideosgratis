@@ -22,6 +22,10 @@ app.get('/public/back-end/script.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/back-end/script.js'));
 });
 
+app.get('/public/style/style.css', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/style/style.css'));
+});
+
 app.get('/download', (req,res) => {
 
     var URL = req.query.URL;
