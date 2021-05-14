@@ -17,7 +17,7 @@ convertBtn.addEventListener('click', () => {
 
 function sendURL(URL) 
 {
-    var URLBase = "localhost";
+    var URLBase = "baixarvideosgratis.vercel.app";
 
     window.location.href = `http://${URLBase}:4000/download?URL=${URL}`;
 }
