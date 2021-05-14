@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
 
-const app = express().use(express.static(__dirname + '/'));
+const app = express();
 
 app.use(cors());
 
