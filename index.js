@@ -14,7 +14,7 @@ app.listen(4000, () => {
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/'));
+    res.sendFile(path.join(__dirname + './'));
 });
 
 app.get('/download', (req,res) => {
