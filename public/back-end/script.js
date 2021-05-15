@@ -19,7 +19,7 @@ function sendURL(URL)
 {
     var URLBase = "baixarvideosgratis.vercel.app";
 
-    window.location.href = `https://${URLBase}:3000/download?URL=${URL}`;
+    window.location.href = `http://${URLBase}:4000/download?URL=${URL}`;
 }
 
 function isValidURL(string) {
