@@ -3,16 +3,22 @@ const cors = require('cors');
 const ytdl = require('ytdl-core');
 var path = require('path');
 
+console.log('Inicio do index.js');
+
 const app = express();
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, '/public')));
+
+console.log('Inicializando abertura da porta...');
 
 app.listen(4000, () => {
 
     console.log('Servidor online! Escutando porta 4000...');
     
 });
+
+console.log('Pós abertura da porta...');
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -37,3 +43,5 @@ app.get('/download', (req,res) => {
     }).pipe(res);
 
 });
+
+console.log('Fim do index.js');
