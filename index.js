@@ -12,9 +12,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 console.log('Inicializando abertura da porta...');
 
-app.listen(4000, () => {
+app.listen(3000, () => {
 
-    console.log('Servidor online! Escutando porta 4000...');
+    console.log('Servidor online! Escutando porta 3000...');
     
 });
 
